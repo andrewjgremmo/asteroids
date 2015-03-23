@@ -2,16 +2,11 @@
 <html>
   <head>
     <title>Asteroids</title>
-
-    <style>
-      html, body, canvas {
-        padding: 0px;
-        margin: 0px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
+    <h1>asteroids.js</h1>
     <canvas id="game-canvas"></canvas>
     <script src="lib/keymaster.js"></script>
     <script src="lib/utils.js"></script>
@@ -21,11 +16,9 @@
     <script src="lib/bullet.js"></script>
     <script src="lib/gameView.js"></script>
     <script src="lib/game.js"></script>
-
-
     <script>
       var canvasEl = document.getElementById("game-canvas");
-      canvasEl.height = 600;
+      canvasEl.height = 500;
       canvasEl.width = 800;
       var ctx = canvasEl.getContext('2d');
       var game = new Asteroids.Game();

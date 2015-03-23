@@ -1,0 +1,16 @@
+html, body, canvas {
+  padding: 0px;
+  margin: 0px;
+}
+
+#game-canvas {
+  border: 1px solid black;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
