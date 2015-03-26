@@ -14,12 +14,14 @@
     <script src="lib/asteroid.js"></script>
     <script src="lib/ship.js"></script>
     <script src="lib/bullet.js"></script>
+    <script src="lib/enemyShip.js"></script>
+    <script src="lib/enemyBullet.js"></script>
     <script src="lib/gameView.js"></script>
     <script src="lib/game.js"></script>
     <script>
       var canvasEl = document.getElementById("game-canvas");
       canvasEl.height = 500;
-      canvasEl.width = 800;
+      canvasEl.width = 900;
       var ctx = canvasEl.getContext('2d');
       var game = new Asteroids.Game();
       var gameView = new Asteroids.GameView(game, ctx);
