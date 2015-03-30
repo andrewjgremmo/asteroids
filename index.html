@@ -28,8 +28,8 @@
     <script src="lib/game.js"></script>
     <script>
       var canvasEl = document.getElementById("game-canvas");
-      canvasEl.height = 500;
-      canvasEl.width = 900;
+      canvasEl.height = window.innerHeight;
+      canvasEl.width = window.innerWidth;
       var ctx = canvasEl.getContext('2d');
       var game = new Asteroids.Game();
       $('form').submit(function (event){

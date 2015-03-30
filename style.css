@@ -15,9 +15,15 @@ button, article, footer, small, canvas {
   vertical-align: inherit;
  }
 
+ body {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("images/background.png");
+ }
+
 form {
   position: absolute;
-  border: 1px solid black;
   display: block;
   width: 900px;
   height: 500px;
@@ -27,7 +33,6 @@ form {
   font-size: 14px;
   left: 0;
   right: 0;
-  background-image: url("images/background.png");
 }
 
 input {
