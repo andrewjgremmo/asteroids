@@ -3,10 +3,17 @@
   <head>
     <title>Asteroids</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script>
+    <script src="vendor/jquery-2.1.3.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700,300,400' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-    <h1>asteroids.js</h1>
+    <form>
+      <img src="images/asteroids-logo.png">
+      <input type="text" name="name" placeholder="Please enter your name.">
+      <button>Begin</button>
+    </form> 
     <canvas id="game-canvas"></canvas>
     <script src="lib/keymaster.js"></script>
     <script src="lib/utils.js"></script>
@@ -25,8 +32,13 @@
       canvasEl.width = 900;
       var ctx = canvasEl.getContext('2d');
       var game = new Asteroids.Game();
-      var gameView = new Asteroids.GameView(game, ctx);
-      gameView.start();
+      $('form').submit(function (event){
+        event.preventDefault();
+        var name = $(event.currentTarget).find("input").val()
+        var gameView = new Asteroids.GameView(game, ctx, name);
+        gameView.start();
+        $('form').hide();
+      });
     </script>
   </body>
 </html>

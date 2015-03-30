@@ -1,6 +1,63 @@
-html, body, canvas {
-  padding: 0px;
-  margin: 0px;
+html, body, header, nav, h1, h2, h3, h4, a, ul, li,
+strong, main, section, img, div, h2, p,
+form, fieldset, label, input, textarea,
+button, article, footer, small, canvas {
+  background: transparent;
+  border: 0;
+  box-sizing: inherit;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+ }
+
+form {
+  position: absolute;
+  border: 1px solid black;
+  display: block;
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  left: 0;
+  right: 0;
+  background-image: url("images/background.png");
+}
+
+input {
+  display: block;
+  margin: auto;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 200px;
+  padding: 5px;
+}
+
+img {
+  display: block;
+  margin: 150px auto 0 auto;
+  width: 200px;
+}
+
+button {
+  display: block;
+  margin: 10px auto 0 auto;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
 }
 
 #game-canvas {
