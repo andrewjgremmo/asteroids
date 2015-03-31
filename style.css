@@ -20,6 +20,7 @@ button, article, footer, small, canvas {
   width: 100%;
   overflow: hidden;
   background-image: url("images/background.png");
+  background-size: repeat;
  }
 
 form {
