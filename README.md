@@ -3,6 +3,12 @@ A browser based version of the arcade classic.
 
 ### [Live Link](http://andrewjgremmo.github.io/asteroids)
 
+## Instructions
+
+* Use arrow keys to move around
+* Spacebar to fire
+* Enter will restart the game after running out of lives
+
 ## Features
 
 * Keeps track of score and lives
@@ -14,6 +20,6 @@ A browser based version of the arcade classic.
 
 ## Technical Details
 * Written in JavaScript, using HTML5 Canvas API
-* Implements an inherits function to allow for inheritance design pattern
-* Uses JavaScript's Math object to use vector algebra to calculate object movement, momentum and UFO attacks
-* Uses JavaScript's Math object to use trigonometry to calculate rotation of ship
+* Implements an `inherits` function to allow for inheritance design pattern
+* Uses JavaScript's `Math` object to use vector algebra to calculate object movement, momentum and UFO attacks
+* Uses JavaScript's `Math` object to use trigonometry to calculate rotation of ship
