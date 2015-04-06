@@ -1,4 +1,5 @@
 # asteroids.js
+[![Code Climate](https://codeclimate.com/github/andrewjgremmo/asteroids/badges/gpa.svg)](https://codeclimate.com/github/andrewjgremmo/asteroids)
 A browser based version of the arcade classic.
 
 ### [Live Link](http://andrewjgremmo.github.io/asteroids)
